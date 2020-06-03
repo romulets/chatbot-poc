@@ -1,0 +1,90 @@
+tags:
+  - name: GREETING
+    input_sentences:
+      - ^hi
+      - ^hey
+      - ^hello
+      - ^hallo
+  - name: AFIRMATION
+    input_sentences:
+      - (.* )?yes
+      - (.* )?fine
+      - (.* )?good
+      - (.* )?great
+  - name: NEGATION
+    input_sentences:
+      - (.* )?no
+      - (.* )?dont
+      - (.* )?nop
+      - (.* )?bad
+      - (.* )?sad
+      - (.* )?terrible
+  - name: FAREWELL
+    input_sentences:
+      - (.* )?bye
+      - (.* )?see you
+  - name: QUESTION
+    input_sentences:
+      - .*\?$
+  - name: EXCLAMATION
+    input_sentences:
+      - .*!$
+
+# ---
+intents:
+  - name: Greeting
+    required_tags:
+      - GREETING
+    answers:
+      - Hi
+      - Heeey man
+      - Wazuuuup
+
+  - name: Asking about me
+    required_tags:
+      - QUESTION
+    input_sentences:
+      - (.*)?How are you(.*)
+      - (.*)?What'?s up(.*)
+      - (.*)?How ( are)?you doing(.*)
+      - (.*)?How'?s going(.*)
+    answers:
+      - I'm great and you?
+      - I'm good, and you?
+      - I'm having a delightful day
+      - what about you?
+    footprints:
+      - name: ASKED_ABOUT_DAY
+        ttl: 3
+
+  - name: Had a good day
+    required_tags: 
+      - AFIRMATION
+    required_footprints:
+      - ASKED_ABOUT_DAY
+    answers:
+      - Awesome!
+      - Glad to read that!
+    footprints:
+      - name: ASKED_ABOUT_DAY
+        ttl: 0
+
+  - name: Had a bad day
+    required_tags: 
+      - NEGATION
+    required_footprints:
+      - ASKED_ABOUT_DAY
+    answers:
+      - That sucks
+      - Sad to read that!
+    footprints:
+      - name: ASKED_ABOUT_DAY
+        ttl: 0
+
+  - name: Farewell
+    required_tags:
+      - FAREWELL
+    answers:
+      - Bye
+      - See ya
+    event: END
