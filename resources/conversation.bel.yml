@@ -1,0 +1,80 @@
+tags:
+  - name: GREETING
+    input_sentences:
+      - ^hi
+      - ^hey
+      - ^hello
+      - ^hallo
+  - name: AFIRMATION
+    input_sentences:
+      - (.* )?yes
+      - (.* )?fine
+      - (.* )?good
+      - (.* )?great
+  - name: NEGATION
+    input_sentences:
+      - (.* )?no
+      - (.* )?dont
+      - (.* )?nop
+      - (.* )?bad
+      - (.* )?sad
+      - (.* )?terrible
+  - name: FAREWELL
+    input_sentences:
+      - (.* )?bye
+      - (.* )?see you
+  - name: QUESTION
+    input_sentences:
+      - .*\?$
+  - name: EXCLAMATION
+    input_sentences:
+      - .*!$
+
+# ---
+intents:
+  - name: Greeting
+    required_tags:
+      - GREETING
+    answers:
+      - Hello, do you want to chat?
+
+  - name: Asked about the love of his life
+    required_tags:
+      - QUESTION
+    input_sentences:
+      - (.*)?who(.*)love(.*)    
+    answers:
+      - Yes! It's bel, right? Such a beautiful lady. How's she?
+    footprints:
+      - name: ASKED_ABOUT_BEL
+        ttl: 3
+
+  - name: Reply how's bel
+    required_tags: 
+      - AFIRMATION
+    required_footprints:
+      - ASKED_ABOUT_BEL
+    answers:
+      - Great to hear that! I can't wait until she is back to the Netherlands
+    footprints:
+      - name: ASKED_ABOUT_DAY
+        ttl: 0
+      - name: FINISHED_ASKED_ABOUT_BEL
+        ttl: 3
+
+  - name: Acknowledge bel
+    required_footprints:
+      - FINISHED_ASKED_ABOUT_BEL
+    answers:
+      - Well, in any case. Good luck and enjoy yourselves!
+    footprints:
+      - name: FINISHED_ASKED_ABOUT_BEL
+        ttl: 0
+
+  - name: Farewell
+    required_tags:
+      - FAREWELL
+    answers:
+      - Bye
+      - See ya
+    event: END
