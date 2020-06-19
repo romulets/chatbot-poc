@@ -18,7 +18,7 @@ def retrieve_tags(tag_model, raw_data_set, sentence):
     prediction = tag_model.predict(sentence_series)
     tag = raw_data_set.query("tag_code == " + str(prediction[0]))["tag"].unique().astype(str)[0]
 
-    print("DEBUG: Tag", tag)
+    print("                                                         Tag", tag)
 
     return [tag]
 
@@ -33,7 +33,7 @@ def lemmatize_transformer(X):
     return X.apply(_lemmatize)
 
 def train_model(file):
-    print("DEBUG: Training Model....")
+    # print("DEBUG: Training Model....")
 
     #read file
     raw_data_set = pd.read_csv(file)
@@ -65,8 +65,8 @@ def train_model(file):
     model.fit(X, y)
 
     # Score
-    print("DEBUG: Model Score", model.score(X_test, y_text))
-    print("------------------\n")
+    # print("DEBUG: Model Score", model.score(X_test, y_text))
+    # print("------------------\n")
 
     return (model, raw_data_set)
 

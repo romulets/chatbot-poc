@@ -53,6 +53,7 @@ AGREEMENT/ACCEPT,Allright
 AGREEMENT/ACCEPT,Right
 AGREEMENT/ACCEPT,Ok
 AGREEMENT/ACCEPT,I would love
+AGREEMENT/ACCEPT,I'm good
 APPRECIATION,I can imagine
 APPRECIATION,I feel you
 APPRECIATION,I feel your pain
@@ -271,3 +272,14 @@ CONVENTIONAL-OPENING,Heeey
 CONVENTIONAL-OPENING,How is it going?
 CONVENTIONAL-OPENING,Hee
 CONVENTIONAL-OPENING,How you doing?
+REJECT,I'm not
+STATEMENT,I would like to hear about animals
+STATEMENT,I would love to hear about countries
+STATEMENT,I want about cars
+STATEMENT,About my order
+OPEN-QUESTION, How is the weather today?
+OPEN-QUESTION, How is the mood of the sky?
+YES-NO-QUESTION, Is the weather bad?
+YES-NO-QUESTION, Is the weather good?
+YES-NO-QUESTION, Is the weather cloudy?
+YES-NO-QUESTION, Is the weather sunny?

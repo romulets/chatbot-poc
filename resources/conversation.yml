@@ -47,6 +47,102 @@ intents:
       - name: ASKED_ABOUT_DAY
         ttl: 0
 
+  - name: WHERE_IS_MY_PACKAGE
+    tags:
+      - WH-QUESTION
+      - OPEN-QUESTION
+      - DECLARATIVE WH-QUESTION
+    input_sentences:
+      - (.*)where(.*)(package)|(delivery)(.*)
+      - (.*)when(.*)(package)|(delivery)(.*)
+      - (.*)what(.*)time(.*)(package)|(delivery)(.*)
+    answers:
+      - "Hm I see you ask about your package. **DING DONG** here it is. Could you please check your mail box?"
+
+  - name: TELL_ME_JOKE
+    tags:
+      - WH-QUESTION
+      - OPEN-QUESTION
+      - BACKCHANNEL-QUESTION
+      - STATEMENT
+    input_sentences:
+      - (.*)joke(.*)
+    answers:
+      - I'm not the best in the business, but I'll try. I know jokes about animals and about countries. Which one do you prefer?
+    footprints:
+      - name: WANT_A_JOKE
+        ttl: 5
+  
+  - name: ABOUT_ANIMALS
+    tags:
+      - STATEMENT
+    required_footprints:
+      - WANT_A_JOKE
+    input_sentences:
+      - (.*)animal(.*)
+    answers:
+      - How does a squid go into battle? WELL-ARMED LOL
+      - Why aren't koalas actual bears? They don't meet koalafications.
+    footprints:
+      - name: WANT_A_JOKE
+        ttl: 5
+      - name: JOKE_ANIMAL
+        ttl: 5
+
+  - name: MORE_ABOUT_ANIMALS
+    tags:
+      - AGREEMENT/ACCEPT
+    required_footprints:
+      - WANT_A_JOKE
+      - JOKE_ANIMAL
+    answers:
+      - Where do you find a cow without legs? Right where you found it HEHEHEHE
+    footprints:
+      - name: WANT_A_JOKE
+        ttl: 0
+      - name: JOKE_ANIMAL
+        ttl: 0
+
+
+  - name: ABOUT_COUNTRIES
+    tags:
+      - STATEMENT
+    required_footprints:
+      - WANT_A_JOKE
+    input_sentences:
+      - (.*)countr(.*)
+    answers:
+      - What do you call a frenchman wearing sandals? Phillipe Phillope
+    footprints:
+      - name: WANT_A_JOKE
+        ttl: 5
+      - name: JOKE_COUNTRY
+        ttl: 5
+
+  - name: MORE_ABOUT_COUNTRIES
+    tags:
+      - AGREEMENT/ACCEPT
+    required_footprints:
+      - WANT_A_JOKE
+      - JOKE_COUNTRY
+    answers:
+      - What's the best thing about Switzerland? I don't know but their flag is a huge plus
+    footprints:
+      - name: WANT_A_JOKE
+        ttl: 0
+      - name: JOKE_COUNTRY
+        ttl: 0
+
+  - name: ASK_ABOUT_WEATHER
+    tags:
+      - OPEN-QUESTION
+      - YES-NO-QUESTION
+    input_sentences:
+      - (.*)weather(.*)
+    answers:
+      - Come on, you are in the Netherlands. Look outside and complain as much as you will!
+      - I won't help with your Dutchy weather life long complaints. Look outside!
+      - Check buienradar
 
   - name: CLOSING
     event: END
@@ -55,21 +151,3 @@ intents:
     answers:
       - All right, have a nice day!
       - Good bye, see you!
-
-      
-  # - name: Asking about me
-  #   tags:
-  #     - QUESTION
-  #   input_sentences:
-  #     - (.*)?How are you(.*)
-  #     - (.*)?What'?s up(.*)
-  #     - (.*)?How ( are)?you doing(.*)
-  #     - (.*)?How'?s going(.*)
-  #   answers:
-  #     - I'm great and you?
-  #     - I'm good, and you?
-  #     - I'm having a delightful day
-  #     - what about you?
-  #   footprints:
-  #     - name: ASKED_ABOUT_DAY
-  #       ttl: 3
