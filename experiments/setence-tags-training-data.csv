@@ -1,0 +1,243 @@
+Sentence type,Sample
+YES-NO-QUESTION,Can you cancel my order?
+YES-NO-QUESTION,Could you please create a return?
+YES-NO-QUESTION,Are you going to cancel it?
+YES-NO-QUESTION,Is she Dutch?
+YES-NO-QUESTION,Shall we start?
+YES-NO-QUESTION,Can you swim?
+YES-NO-QUESTION,Have you ever been to the NL?
+YES-NO-QUESTION,Do you like playing guitar?
+YES-NO-QUESTION,Are you hungry?
+STATEMENT,"Me, I'm in the legal department"
+STATEMENT,I want to buy a house
+STATEMENT,You are a human
+STATEMENT,I am a software developer
+STATEMENT,I work for bol.com
+STATEMENT,I work for coolblue
+THANKING,Thank you
+THANKING,Thanks
+THANKING,You are really kind
+THANKING,I'm glad you did it
+THANKING,I am glad you have done that
+THANKING,I appreciate your gesture
+APOLOGY,I am sorry
+APOLOGY,Pardon
+APOLOGY,I'm sorry
+APOLOGY,I feel bad
+APOLOGY,I'm really sorry
+APOLOGY,I'm so sorry
+OPINION,I think that's great
+OPINION,I think you did a good job
+OPINION,I don't think so
+OPINION,In my opinion you are wrong
+OPINION,The way I see that is bad
+OPINION,In my point of view they are awesome
+MAYBE/ACCEPT-PART,Maybe
+MAYBE/ACCEPT-PART,I'm not sure about that
+MAYBE/ACCEPT-PART,Perhaps
+MAYBE/ACCEPT-PART,Maybe you are right
+MAYBE/ACCEPT-PART,I may be able to do it
+MAYBE/ACCEPT-PART,You might be correct
+AGREEMENT/ACCEPT,I do
+AGREEMENT/ACCEPT,Let's do it
+AGREEMENT/ACCEPT,Yes
+AGREEMENT/ACCEPT,I agree
+AGREEMENT/ACCEPT,Of course
+AGREEMENT/ACCEPT,"Yes, I do"
+AGREEMENT/ACCEPT,I would love
+APPRECIATION,I can imagine
+APPRECIATION,I feel you
+APPRECIATION,I feel your pain
+APPRECIATION,I see your point
+APPRECIATION,I understand what you are saying
+YES-NO-QUESTION,Is the IPhone back in stock?
+YES-NO-QUESTION,Can I pay with credit card?
+YES-NO-QUESTION,Can I wait to pay my order?
+YES ANSWERS,Yes
+YES ANSWERS,"Yes, I do"
+YES ANSWERS,"Yes, I think so"
+YES ANSWERS,"Yes, I like it"
+YES ANSWERS,"Yes, please"
+YES ANSWERS,"Yes, I would love it"
+YES ANSWERS,"Yes, I would be happy"
+CONVENTIONAL-CLOSING,Good bye
+CONVENTIONAL-CLOSING,It's been nice talking to you
+CONVENTIONAL-CLOSING,It was a pleasure
+CONVENTIONAL-CLOSING,See you next time
+CONVENTIONAL-CLOSING,Talk to you
+CONVENTIONAL-CLOSING,Until the next opportunity
+WH-QUESTION,What time is it?
+WH-QUESTION,When my package will be delivered?
+WH-QUESTION,Where is my package?
+WH-QUESTION,Which product is better?
+WH-QUESTION,Who can help me with that?
+NO ANSWERS,No
+NO ANSWERS,"No, I don't"
+NO ANSWERS,"No, I would not"
+NO ANSWERS,"No, I can't"
+NO ANSWERS,"No, I would never"
+NO ANSWERS,Nop
+RESPONSE ACKNOWLEDGMENT,"Oh, okay"
+RESPONSE ACKNOWLEDGMENT,All right
+RESPONSE ACKNOWLEDGMENT,Okay then
+RESPONSE ACKNOWLEDGMENT,Can be
+RESPONSE ACKNOWLEDGMENT,I see
+RESPONSE ACKNOWLEDGMENT,Good point
+RESPONSE ACKNOWLEDGMENT,Ok
+BACKCHANNEL-QUESTION,Are you sure?
+BACKCHANNEL-QUESTION,Is it right?
+BACKCHANNEL-QUESTION,Am I correct?
+BACKCHANNEL-QUESTION,Should we do that then?
+BACKCHANNEL-QUESTION,Is that okay?
+SUMMARIZE/REFORMULATE,You mean you can't' cancel my order?
+SUMMARIZE/REFORMULATE,You mean you can cancel my order
+SUMMARIZE/REFORMULATE,"Oh, you mean that this product is good"
+SUMMARIZE/REFORMULATE,"Okay, so you meant order number"
+SUMMARIZE/REFORMULATE,Hm do you mean my receipt?
+OPEN-QUESTION,How are you doing?
+OPEN-QUESTION,What do you think about that?
+OPEN-QUESTION,How about you?
+OPEN-QUESTION,What can you do for me?
+OPEN-QUESTION,How can you help me?
+OPEN-QUESTION,Why would you do that?
+REJECT,"Well, no"
+REJECT,Never
+REJECT,Hell no!
+REJECT,No way
+REJECT,I won't do that
+REJECT,I can't do this
+REJECT,I would never say that
+SIGNAL-NON-UNDERSTANDING,I don't know what you mean
+SIGNAL-NON-UNDERSTANDING,I don't follow you
+SIGNAL-NON-UNDERSTANDING,I didn't get
+SIGNAL-NON-UNDERSTANDING,I don't get it
+SIGNAL-NON-UNDERSTANDING,I am not following
+SIGNAL-NON-UNDERSTANDING,You lost me
+CONVENTIONAL-OPENING,Hello
+CONVENTIONAL-OPENING,Hi
+CONVENTIONAL-OPENING,Good morning
+CONVENTIONAL-OPENING,Good afternoon
+CONVENTIONAL-OPENING,Good evening
+CONVENTIONAL-OPENING,Morning
+CONVENTIONAL-OPENING,"Hi, how are you?"
+"OFFERS, OPTIONS & COMMITS",I'll have to double check
+"OFFERS, OPTIONS & COMMITS",Let me check
+"OFFERS, OPTIONS & COMMITS",Wait a second
+"OFFERS, OPTIONS & COMMITS",Just a second
+"OFFERS, OPTIONS & COMMITS",Wait a minute
+"OFFERS, OPTIONS & COMMITS",I'll get back to you
+DECLARATIVE WH-QUESTION,Do you know what I mean?
+DECLARATIVE WH-QUESTION,You know how many products I bought?
+DECLARATIVE WH-QUESTION,You have any idea how long it takes?
+DECLARATIVE WH-QUESTION,You know what company will deliver my package?
+DECLARATIVE WH-QUESTION,Do you see how we can solve that?
+DECLARATIVE WH-QUESTION,Are going you going to know what to do?
+"OFFERS, OPTIONS & COMMITS",Let me think about it
+"OFFERS, OPTIONS & COMMITS",I'll have to check this.
+"OFFERS, OPTIONS & COMMITS",I need to take a look at this.
+"OFFERS, OPTIONS & COMMITS",Give me a second to check this out.
+"OFFERS, OPTIONS & COMMITS",I'll think about it
+CONVENTIONAL-OPENING,How are you?
+CONVENTIONAL-OPENING,I hope you doing fine.
+CONVENTIONAL-OPENING,How is your day going.
+CONVENTIONAL-OPENING,Welcome.
+CONVENTIONAL-OPENING,Hi there.
+SIGNAL-NON-UNDERSTANDING,Excuse me?
+SIGNAL-NON-UNDERSTANDING,Can you say it again?
+SIGNAL-NON-UNDERSTANDING,I think I couldn't understand.
+SIGNAL-NON-UNDERSTANDING,Sorry I couldn't get you.
+SIGNAL-NON-UNDERSTANDING,Could you please explain what do you mean exactly?
+REJECT,No
+REJECT,I can't
+REJECT,Unfortunately
+REJECT,I can't say yes to this.
+REJECT,Maybe next time.
+OPEN-QUESTION,How do you see your future?
+OPEN-QUESTION,Tell me about yourself.
+OPEN-QUESTION,Why did you ask that?
+OPEN-QUESTION,What is the purpose of your friend?
+BACKCHANNEL-QUESTION,"Oh, really?"
+BACKCHANNEL-QUESTION,Is that right?
+BACKCHANNEL-QUESTION,Are you kidding?
+BACKCHANNEL-QUESTION,Is it for real?
+BACKCHANNEL-QUESTION,
+DECLARATIVE YES-NO-QUESTION,"Well, you are a Dutch citizen?"
+DECLARATIVE YES-NO-QUESTION,"So, you like to play guitar?"
+DECLARATIVE YES-NO-QUESTION,"Then, you don't want to quit?"
+DECLARATIVE YES-NO-QUESTION,"You think, you will leave?"
+DECLARATIVE YES-NO-QUESTION,Do you have my product?
+RESPONSE ACKNOWLEDGMENT,"Oh, ok."
+RESPONSE ACKNOWLEDGMENT,"Hmm, make sense"
+RESPONSE ACKNOWLEDGMENT,I see your point
+RESPONSE ACKNOWLEDGMENT,I understand.
+RESPONSE ACKNOWLEDGMENT,I get you
+NO ANSWERS,"No, It is not"
+NO ANSWERS,Unfortunately no
+NO ANSWERS,"No, I would not do that"
+WH-QUESTION,What do you want to do?
+WH-QUESTION,Why do you want to do this?
+WH-QUESTION,Which movie do you like most?
+WH-QUESTION,Where do you live?
+WH-QUESTION,Who do you think you are?
+CONVENTIONAL-CLOSING,Thank you.
+CONVENTIONAL-CLOSING,Well It was really nice to talk to you.
+CONVENTIONAL-CLOSING,It was a nice conversation.
+CONVENTIONAL-CLOSING,Hope to see you again.
+CONVENTIONAL-CLOSING,Hope you have a nice day.
+YES ANSWERS,Yes of course
+YES ANSWERS,Yes I can do that
+YES ANSWERS,Yes please
+YES ANSWERS,Yes let's do this.
+APPRECIATION,I got it.
+APPRECIATION,I got your point.
+APPRECIATION,I understand.
+APPRECIATION,I can imagine.
+APPRECIATION,I see.
+AGREEMENT/ACCEPT,That's it.
+AGREEMENT/ACCEPT,Of course.
+AGREEMENT/ACCEPT,Exactly.
+AGREEMENT/ACCEPT,Sure.
+AGREEMENT/ACCEPT,Sure I can.
+MAYBE/ACCEPT-PART,Maybe I can
+MAYBE/ACCEPT-PART,Let me see If I can do this.
+MAYBE/ACCEPT-PART,I am not sure I can do this.
+MAYBE/ACCEPT-PART,Probably
+MAYBE/ACCEPT-PART,Most possibly
+OPINION,I think this is it.
+OPINION,"In my opinion, this is great."
+OPINION,From my perspective It is awesome.
+OPINION,I would say this is great.
+OPINION,My impression is that is great.
+APOLOGY,I am so sorry
+APOLOGY,I apologize for that.
+APOLOGY,Please forgive me.
+APOLOGY,I am sorry.
+APOLOGY,I shouldn't have done this.
+THANKING,Thank you so much.
+THANKING,I appreciate it.
+THANKING,You are so kind.
+THANKING,My sincere appreciation
+THANKING,Please accept my appreciation.
+STATEMENT,I am from Turkey.
+STATEMENT,I like to play guitar.
+STATEMENT,I have a son.
+STATEMENT,I want to go to cinema.
+STATEMENT,I am a computer engineer.
+SUMMARIZE/REFORMULATE,"Oh, you mean you are a sofware engineer."
+SUMMARIZE/REFORMULATE,"Well, you think you don't like our product."
+SUMMARIZE/REFORMULATE,As far as I can understand you want to buy a house.
+SUMMARIZE/REFORMULATE,You mean you want to return your title.
+SUMMARIZE/REFORMULATE,You meant the product is broken
+RESPONSE ACKNOWLEDGMENT,alright
+NO ANSWERS,No way
+NO ANSWERS,"No, that's not possible"
+DECLARATIVE WH-QUESTION,Did you get what I said?
+DECLARATIVE WH-QUESTION,Do you see why I'm calling you?
+DECLARATIVE WH-QUESTION,Do you know why my package is not delivered
+DECLARATIVE WH-QUESTION,Are sure how long it will take?
+DECLARATIVE YES-NO-QUESTION,Are you going to return?
+DECLARATIVE YES-NO-QUESTION,Can I talk to a human?
+DECLARATIVE YES-NO-QUESTION,Is the product water proof?
+DECLARATIVE YES-NO-QUESTION,Is it a good brand?
+DECLARATIVE YES-NO-QUESTION,Am I able to buy it?
+DECLARATIVE YES-NO-QUESTION,Is it in stock?
