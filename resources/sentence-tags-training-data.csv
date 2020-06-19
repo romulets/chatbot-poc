@@ -2,6 +2,7 @@ Sentence type,Sample
 YES-NO-QUESTION,Can you cancel my order?
 YES-NO-QUESTION,Could you please create a return?
 YES-NO-QUESTION,Are you going to cancel it?
+YES-NO-QUESTION,Am I logged in?
 YES-NO-QUESTION,Is she Dutch?
 YES-NO-QUESTION,Shall we start?
 YES-NO-QUESTION,Can you swim?
@@ -14,17 +15,21 @@ STATEMENT,You are a human
 STATEMENT,I am a software developer
 STATEMENT,I work for bol.com
 STATEMENT,I work for coolblue
+STATEMENT,We are a team
+STATEMENT,You are my friend
 THANKING,Thank you
 THANKING,Thanks
 THANKING,You are really kind
 THANKING,I'm glad you did it
 THANKING,I am glad you have done that
+THANKING,Thank you so much.
 THANKING,I appreciate your gesture
 APOLOGY,I am sorry
 APOLOGY,Pardon
 APOLOGY,I'm sorry
 APOLOGY,I feel bad
 APOLOGY,I'm really sorry
+APOLOGY,Excuse me
 APOLOGY,I'm so sorry
 OPINION,I think that's great
 OPINION,I think you did a good job
@@ -44,14 +49,21 @@ AGREEMENT/ACCEPT,Yes
 AGREEMENT/ACCEPT,I agree
 AGREEMENT/ACCEPT,Of course
 AGREEMENT/ACCEPT,"Yes, I do"
+AGREEMENT/ACCEPT,Allright
+AGREEMENT/ACCEPT,Right
+AGREEMENT/ACCEPT,Ok
 AGREEMENT/ACCEPT,I would love
 APPRECIATION,I can imagine
 APPRECIATION,I feel you
 APPRECIATION,I feel your pain
 APPRECIATION,I see your point
+APPRECIATION,You are doing great
 APPRECIATION,I understand what you are saying
 YES-NO-QUESTION,Is the IPhone back in stock?
 YES-NO-QUESTION,Can I pay with credit card?
+YES-NO-QUESTION,Can I return my item?
+YES-NO-QUESTION,Is it possible to change my address?
+YES-NO-QUESTION,Is the sendingcost included?
 YES-NO-QUESTION,Can I wait to pay my order?
 YES ANSWERS,Yes
 YES ANSWERS,"Yes, I do"
@@ -59,9 +71,12 @@ YES ANSWERS,"Yes, I think so"
 YES ANSWERS,"Yes, I like it"
 YES ANSWERS,"Yes, please"
 YES ANSWERS,"Yes, I would love it"
+YES ANSWERS,Yeah
 YES ANSWERS,"Yes, I would be happy"
-CONVENTIONAL-CLOSING,Good bye
+CONVENTIONAL-CLOSING,Goodbye
+CONVENTIONAL-CLOSING,Bye
 CONVENTIONAL-CLOSING,It's been nice talking to you
+CONVENTIONAL-CLOSING,See you
 CONVENTIONAL-CLOSING,It was a pleasure
 CONVENTIONAL-CLOSING,See you next time
 CONVENTIONAL-CLOSING,Talk to you
@@ -71,7 +86,9 @@ WH-QUESTION,When my package will be delivered?
 WH-QUESTION,Where is my package?
 WH-QUESTION,Which product is better?
 WH-QUESTION,Who can help me with that?
+WH-QUESTION,Can you tell me when the package arrives?
 NO ANSWERS,No
+NO ANSWERS,Noooooooo
 NO ANSWERS,"No, I don't"
 NO ANSWERS,"No, I would not"
 NO ANSWERS,"No, I can't"
@@ -106,12 +123,15 @@ REJECT,Hell no!
 REJECT,No way
 REJECT,I won't do that
 REJECT,I can't do this
+REJECT,I will not
 REJECT,I would never say that
 SIGNAL-NON-UNDERSTANDING,I don't know what you mean
 SIGNAL-NON-UNDERSTANDING,I don't follow you
 SIGNAL-NON-UNDERSTANDING,I didn't get
 SIGNAL-NON-UNDERSTANDING,I don't get it
 SIGNAL-NON-UNDERSTANDING,I am not following
+SIGNAL-NON-UNDERSTANDING,?????
+SIGNAL-NON-UNDERSTANDING,?!
 SIGNAL-NON-UNDERSTANDING,You lost me
 CONVENTIONAL-OPENING,Hello
 CONVENTIONAL-OPENING,Hi
@@ -119,7 +139,7 @@ CONVENTIONAL-OPENING,Good morning
 CONVENTIONAL-OPENING,Good afternoon
 CONVENTIONAL-OPENING,Good evening
 CONVENTIONAL-OPENING,Morning
-CONVENTIONAL-OPENING,"Hi, how are you?"
+CONVENTIONAL-OPENING,How are you doing?
 "OFFERS, OPTIONS & COMMITS",I'll have to double check
 "OFFERS, OPTIONS & COMMITS",Let me check
 "OFFERS, OPTIONS & COMMITS",Wait a second
@@ -138,11 +158,12 @@ DECLARATIVE WH-QUESTION,Are going you going to know what to do?
 "OFFERS, OPTIONS & COMMITS",Give me a second to check this out.
 "OFFERS, OPTIONS & COMMITS",I'll think about it
 CONVENTIONAL-OPENING,How are you?
-CONVENTIONAL-OPENING,I hope you doing fine.
 CONVENTIONAL-OPENING,How is your day going.
 CONVENTIONAL-OPENING,Welcome.
 CONVENTIONAL-OPENING,Hi there.
 SIGNAL-NON-UNDERSTANDING,Excuse me?
+SIGNAL-NON-UNDERSTANDING,Can you repeat that?
+SIGNAL-NON-UNDERSTANDING,What?
 SIGNAL-NON-UNDERSTANDING,Can you say it again?
 SIGNAL-NON-UNDERSTANDING,I think I couldn't understand.
 SIGNAL-NON-UNDERSTANDING,Sorry I couldn't get you.
@@ -151,20 +172,22 @@ REJECT,No
 REJECT,I can't
 REJECT,Unfortunately
 REJECT,I can't say yes to this.
+REJECT,Not at this moment
 REJECT,Maybe next time.
 OPEN-QUESTION,How do you see your future?
 OPEN-QUESTION,Tell me about yourself.
 OPEN-QUESTION,Why did you ask that?
+OPEN-QUESTION,How should I return my package?
 OPEN-QUESTION,What is the purpose of your friend?
 BACKCHANNEL-QUESTION,"Oh, really?"
 BACKCHANNEL-QUESTION,Is that right?
 BACKCHANNEL-QUESTION,Are you kidding?
 BACKCHANNEL-QUESTION,Is it for real?
-BACKCHANNEL-QUESTION,
 DECLARATIVE YES-NO-QUESTION,"Well, you are a Dutch citizen?"
 DECLARATIVE YES-NO-QUESTION,"So, you like to play guitar?"
 DECLARATIVE YES-NO-QUESTION,"Then, you don't want to quit?"
 DECLARATIVE YES-NO-QUESTION,"You think, you will leave?"
+DECLARATIVE YES-NO-QUESTION,You will pay me back then?
 DECLARATIVE YES-NO-QUESTION,Do you have my product?
 RESPONSE ACKNOWLEDGMENT,"Oh, ok."
 RESPONSE ACKNOWLEDGMENT,"Hmm, make sense"
@@ -178,11 +201,13 @@ WH-QUESTION,What do you want to do?
 WH-QUESTION,Why do you want to do this?
 WH-QUESTION,Which movie do you like most?
 WH-QUESTION,Where do you live?
+WH-QUESTION,When will you go on holiday?
 WH-QUESTION,Who do you think you are?
 CONVENTIONAL-CLOSING,Thank you.
 CONVENTIONAL-CLOSING,Well It was really nice to talk to you.
 CONVENTIONAL-CLOSING,It was a nice conversation.
 CONVENTIONAL-CLOSING,Hope to see you again.
+CONVENTIONAL-CLOSING,Have a nice day
 CONVENTIONAL-CLOSING,Hope you have a nice day.
 YES ANSWERS,Yes of course
 YES ANSWERS,Yes I can do that
@@ -197,7 +222,7 @@ AGREEMENT/ACCEPT,That's it.
 AGREEMENT/ACCEPT,Of course.
 AGREEMENT/ACCEPT,Exactly.
 AGREEMENT/ACCEPT,Sure.
-AGREEMENT/ACCEPT,Sure I can.
+AGREEMENT/ACCEPT,I'm fine
 MAYBE/ACCEPT-PART,Maybe I can
 MAYBE/ACCEPT-PART,Let me see If I can do this.
 MAYBE/ACCEPT-PART,I am not sure I can do this.
@@ -241,3 +266,8 @@ DECLARATIVE YES-NO-QUESTION,Is the product water proof?
 DECLARATIVE YES-NO-QUESTION,Is it a good brand?
 DECLARATIVE YES-NO-QUESTION,Am I able to buy it?
 DECLARATIVE YES-NO-QUESTION,Is it in stock?
+CONVENTIONAL-OPENING,Hey
+CONVENTIONAL-OPENING,Heeey
+CONVENTIONAL-OPENING,How is it going?
+CONVENTIONAL-OPENING,Hee
+CONVENTIONAL-OPENING,How you doing?

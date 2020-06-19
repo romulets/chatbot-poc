@@ -4,12 +4,12 @@ from footprint import Footprint
 
 class Intent():
 
-    def __init__(self, name, answers, input_sentences=[], required_footprints=[], required_tags=[], footprints=[], event=None):
+    def __init__(self, name, answers, input_sentences=[], required_footprints=[], tags=[], footprints=[], event=None):
         self.__name = name
         self.__input_sentences = list(map(lambda i: str(i).lower().strip(), input_sentences))
         self.__answers = answers 
         self.__required_footprints = required_footprints
-        self.__required_tags = required_tags
+        self.__tags = tags
         self.__footprints = footprints
         self.__event = event
 
@@ -17,7 +17,7 @@ class Intent():
         return (
             (len(self.__input_sentences) == 0 or any(map(sentence.match, self.__input_sentences)))
             and all(map(lambda f: not footprints.get(f) == None, self.__required_footprints))
-            and all(map(lambda t: not tags.get(t) == None, self.__required_tags))
+            and any(map(lambda t: not tags.get(t) == None, self.__tags))
         )
 
     def answer(self):

@@ -1,90 +1,75 @@
-tags:
-  - name: GREETING
-    input_sentences:
-      - ^hi
-      - ^hey
-      - ^hello
-      - ^hallo
-  - name: AFIRMATION
-    input_sentences:
-      - (.* )?yes
-      - (.* )?fine
-      - (.* )?good
-      - (.* )?great
-  - name: NEGATION
-    input_sentences:
-      - (.* )?no
-      - (.* )?dont
-      - (.* )?nop
-      - (.* )?bad
-      - (.* )?sad
-      - (.* )?terrible
-  - name: FAREWELL
-    input_sentences:
-      - (.* )?bye
-      - (.* )?see you
-  - name: QUESTION
-    input_sentences:
-      - .*\?$
-  - name: EXCLAMATION
-    input_sentences:
-      - .*!$
-
-# ---
 intents:
-  - name: Greeting
-    required_tags:
-      - GREETING
-    answers:
-      - Hi
-      - Heeey man
-      - Wazuuuup
-
-  - name: Asking about me
-    required_tags:
-      - QUESTION
+  - name: ASK_ABOUT_HUMAN
+    tags:
+      - CONVENTIONAL-OPENING
     input_sentences:
-      - (.*)?How are you(.*)
-      - (.*)?What'?s up(.*)
-      - (.*)?How ( are)?you doing(.*)
-      - (.*)?How'?s going(.*)
+      - (.*)Hi+(.*)
+      - (.*)He+y+(.*)
+      - (.*)He+llo+(.*)
+      - (.*)Ha+llo+(.*)
     answers:
-      - I'm great and you?
+      - Hallo
+
+  - name: ASK_ABOUT_HUMAN
+    tags:
+      - CONVENTIONAL-OPENING
+    input_sentences:
+      - (.*)How(.*)you(.*)
+      - (.*)How(.*)it(.*)
+    answers:
       - I'm good, and you?
-      - I'm having a delightful day
-      - what about you?
+      - I'm fine and you?
     footprints:
       - name: ASKED_ABOUT_DAY
         ttl: 3
-
-  - name: Had a good day
-    required_tags: 
-      - AFIRMATION
+  
+  - name: RESPONSE_DAY_POSITIVE
+    tags: 
+      - YES ANSWERS
+      - AGREEMENT/ACCEPT
     required_footprints:
       - ASKED_ABOUT_DAY
     answers:
-      - Awesome!
-      - Glad to read that!
+      - Glad to hear that!
     footprints:
       - name: ASKED_ABOUT_DAY
         ttl: 0
 
-  - name: Had a bad day
-    required_tags: 
-      - NEGATION
+  - name: RESPONSE_DAY_NEGATIVE
+    tags: 
+      - REJECT
+      - NO ANSWERS
     required_footprints:
       - ASKED_ABOUT_DAY
     answers:
-      - That sucks
-      - Sad to read that!
+      - I'm sad to hear that
     footprints:
       - name: ASKED_ABOUT_DAY
         ttl: 0
 
-  - name: Farewell
-    required_tags:
-      - FAREWELL
-    answers:
-      - Bye
-      - See ya
+
+  - name: CLOSING
     event: END
+    tags:
+      - CONVENTIONAL-CLOSING
+    answers:
+      - All right, have a nice day!
+      - Good bye, see you!
+
+      
+  # - name: Asking about me
+  #   tags:
+  #     - QUESTION
+  #   input_sentences:
+  #     - (.*)?How are you(.*)
+  #     - (.*)?What'?s up(.*)
+  #     - (.*)?How ( are)?you doing(.*)
+  #     - (.*)?How'?s going(.*)
+  #   answers:
+  #     - I'm great and you?
+  #     - I'm good, and you?
+  #     - I'm having a delightful day
+  #     - what about you?
+  #   footprints:
+  #     - name: ASKED_ABOUT_DAY
+  #       ttl: 3
